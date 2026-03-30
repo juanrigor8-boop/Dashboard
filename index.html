@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDash | Compact Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <i class="fa-solid fa-terminal"></i> <span>DevNotes</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="nav-item active"><i class="fa-solid fa-house"></i> Dashboard</a>
+                <a href="#estadisticas" class="nav-item"><i class="fa-solid fa-chart-line"></i> Estadísticas</a>
+                <a href="#productos" class="nav-item"><i class="fa-solid fa-box"></i> Productos</a>
+                <a href="#clientes" class="nav-item"><i class="fa-solid fa-users"></i> Clientes</a>
+                <a href="#configuracion" class="nav-item"><i class="fa-solid fa-gear"></i> Configuración</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>v 1.0.2</p>
+            </div>
+        </aside>
+
+        <header class="header">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <div class="header-user">
+                <i class="fa-solid fa-bell notification"></i>
+                <div class="avatar">JD</div>
+                <span>J. Doe</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </header>
+
+        <main class="main-content">
+            
+            <section id="dashboard" class="content-section">
+                <div class="content-header">
+                    <h1>Panel General</h1>
+                    <button class="btn-primary-sm">+ Proyecto</button>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="card stat-card">
+                        <i class="fa-solid fa-eye cyan"></i>
+                        <div>
+                            <h3>1.2k</h3>
+                            <p>Visitas</p>
+                        </div>
+                    </div>
+                    <div class="card stat-card">
+                        <i class="fa-solid fa-code-branch purple"></i>
+                        <div>
+                            <h3>84</h3>
+                            <p>Commits</p>
+                        </div>
+                    </div>
+                    <div class="card stat-card">
+                        <i class="fa-solid fa-check-circle green"></i>
+                        <div>
+                            <h3>12</h3>
+                            <p>Tareas</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="estadisticas" class="content-section">
+                <h2>Rendimiento</h2>
+                <div class="card">
+                    <div class="table-placeholder-sm">
+                        <p><i class="fa-solid fa-chart-area"></i> Gráfico compacto...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="productos" class="content-section">
+                <h2>Productos</h2>
+                <div class="card p-0">
+                    <table class="compact-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>API Gateway</td>
+                                <td><span class="status-badge online">Online</span></td>
+                                <td><i class="fa-solid fa-edit"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Auth Service</td>
+                                <td><span class="status-badge online">Online</span></td>
+                                <td><i class="fa-solid fa-edit"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="clientes" class="content-section">
+                <h2>Clientes Recientes</h2>
+                <div class="card recent-activity">
+                    <div class="activity-item">
+                        <div class="avatar-sm">AM</div>
+                        <div>
+                            <p class="m-0"><strong>Ana Martínez</strong> <span class="text-dim">creó una cuenta.</span></p>
+                            <span class="time">Hace 5 min</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
